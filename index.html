@@ -4,18 +4,29 @@
         <meta charset="UTF-8" />
         <title>Курсовая работа</title>
         <style>
-            * {
+            html, body {
                 margin:0;
                 padding:0;
-            }
-            html, body {
                 width:100%;
                 height:100%;
                 position:relative;
             }
 
-            .content {
-                align-self:center;
+            #top-panel {
+                width:60%;
+                min-width:320px;
+                margin-left:auto;
+                margin-right:auto;
+                border-collapse:collapse;
+            }
+
+            #input-form {
+                display:inline-block;
+                width:auto;
+            }
+
+            #fn-input {
+                width:100%;
             }
 
             .footer {
@@ -29,16 +40,18 @@
         </style>
     </head>
     <body>
-        <div class="content">
-            <div class="input_header">
-                <form name="func" method="post" action="">
-                    <div class="input_header-input">
-                        f(x) =
-                        <input class="func-input" type="text">
-                    </div>
-                    <div class="input_header-submit">
-                        <input type="submit" value="Go!">
-                    </div>
+        <main id="content">
+            <table id="top-panel">
+                <form id="input-form" name="input-form" action="">
+                    <tr>
+                        <th id="top-panel-left">f(x)=</th>
+                        <th id="top-panel-mid">
+                            <input id="fn-input" name="fn" type="text">
+                        </th>
+                        <th id="top-panel-right">
+                            <input type="submit" value="Go!">
+                        </th>
+                    </tr>
                 </form>
             </div>
         </div>
