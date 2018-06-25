@@ -3,43 +3,26 @@
     <head>
         <meta charset="UTF-8" />
         <title>Курсовая работа</title>
-        <style>
-            * {
-                margin:0;
-                padding:0;
-            }
-            html, body {
-                width:100%;
-                height:100%;
-                position:relative;
-            }
-
-            .content {
-                align-self:center;
-            }
-
-            .footer {
-                width:100%;
-                height:auto;
-                position:absolute;
-                bottom:0px;
-                margin-bottom:4px;
-                text-align:center;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div class="content">
-            <div class="input_header">
-                <form name="func" method="post" action="">
-                    <div class="input_header-input">
-                        f(x) =
-                        <input class="func-input" type="text">
-                    </div>
-                    <div class="input_header-submit">
-                        <input type="submit" value="Go!">
-                    </div>
-                </form>
+        <main id="content">
+            <div id="top-panel">
+                <table id="top-panel-table">
+                    <form id="input-form" name="input-form" action="">
+                        <tr>
+                            <th id="top-panel-left">
+                                <span id="fx_eq">f(x)=</span>
+                            </th>
+                            <th id="top-panel-mid">
+                                <input id="fn-input" name="fn" type="text">
+                            </th>
+                            <th id="top-panel-right">
+                                <input id="go-button" type="submit" value="Go!">
+                            </th>
+                        </tr>
+                    </form>
+                </table>
             </div>
         </div>
         <div class="footer">
