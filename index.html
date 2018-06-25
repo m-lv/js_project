@@ -13,6 +13,12 @@
             }
 
             #top-panel {
+                width:100%;
+
+                background-color:#008bff;
+            }
+
+            #top-panel-table {
                 width:60%;
                 min-width:320px;
                 margin-left:auto;
@@ -28,6 +34,15 @@
             #fn-input {
                 width:100%;
             }
+                
+            #fx_eq {
+                color:#ffffff;
+            }
+                
+            #go-button {
+                color:#ffffff;
+                background-color:#005ba4;
+            }
 
             .footer {
                 width:100%;
@@ -41,18 +56,22 @@
     </head>
     <body>
         <main id="content">
-            <table id="top-panel">
-                <form id="input-form" name="input-form" action="">
-                    <tr>
-                        <th id="top-panel-left">f(x)=</th>
-                        <th id="top-panel-mid">
-                            <input id="fn-input" name="fn" type="text">
-                        </th>
-                        <th id="top-panel-right">
-                            <input type="submit" value="Go!">
-                        </th>
-                    </tr>
-                </form>
+            <div id="top-panel">
+                <table id="top-panel-table">
+                    <form id="input-form" name="input-form" action="">
+                        <tr>
+                            <th id="top-panel-left">
+                                <span id="fx_eq">f(x)=</span>
+                            </th>
+                            <th id="top-panel-mid">
+                                <input id="fn-input" name="fn" type="text">
+                            </th>
+                            <th id="top-panel-right">
+                                <input id="go-button" type="submit" value="Go!">
+                            </th>
+                        </tr>
+                    </form>
+                </table>
             </div>
         </div>
         <div class="footer">
