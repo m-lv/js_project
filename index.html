@@ -4,27 +4,32 @@
         <meta charset="UTF-8" />
         <title>Курсовая работа</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script src="https://unpkg.com/expr-eval@1.2.1/dist/bundle.js"></script>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://unpkg.com/c3@0.6.2/c3.js"></script>
+
+        <script src="scripts.js"></script>
     </head>
     <body>
         <main id="content">
             <div id="top-panel">
                 <table id="top-panel-table">
-                    <form id="input-form" name="input-form" action="">
-                        <tr>
-                            <th id="top-panel-left">
-                                <span id="fx_eq">f(x)=</span>
-                            </th>
-                            <th id="top-panel-mid">
-                                <input id="fn-input" name="fn" type="text">
-                            </th>
-                            <th id="top-panel-right">
-                                <input id="go-button" type="submit" value="Go!">
-                            </th>
-                        </tr>
-                    </form>
+                    <tr>
+                        <th id="top-panel-left">
+                            <span id="fx_eq">f(x)=</span>
+                        </th>
+                        <th id="top-panel-mid">
+                            <input id="fn-input" name="fn" type="text" autofocus>
+                        </th>
+                        <th id="top-panel-right">
+                            <input id="go-button" type="submit" value="Go!" onClick="go();">
+                        </th>
+                    </tr>
                 </table>
             </div>
-        </div>
+            <div id="chart"></div>
+        </main>
         <div class="footer">
             © 2018 М Лаврентьев, ИВБО-2-16, mslavrentiev@yandex.ru
         </div>

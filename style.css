@@ -20,6 +20,13 @@ html, body {
     border-collapse:collapse;
 }
 
+#chart {
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+}
+
 #input-form {
     display:inline-block;
     width:auto;
