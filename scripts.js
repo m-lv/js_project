@@ -69,8 +69,12 @@ function buildChart(data) {
 
 
 function go() {
-    let text = getUserInput();
-    let func = parseFunction(text);    
-    let data = generateData(func, -10, 10, 0.1);
-    buildChart(data);
+    try {
+        let text = getUserInput();
+        let func = parseFunction(text);    
+        let data = generateData(func, -10, 10, 0.1);
+        buildChart(data);
+    } catch (er) {
+        alert (er);
+    }
 }
